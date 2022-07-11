@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --second-color: #f54300;
+    --main-color: #7dd87d;
+    --text-color: #130849;
+    --other-color: #999fb9;
+    --big-font: 4.8rem;
+    --h2-font: 3.2rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 25px 18%;
+    z-index: 100;
+    transition: all 0.35s ease-in;
+}
