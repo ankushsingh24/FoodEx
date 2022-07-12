@@ -1,38 +1,69 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --bg-color: #ffffff;
-    --second-color: #f54300;
-    --main-color: #7dd87d;
-    --text-color: #130849;
-    --other-color: #999fb9;
-    --big-font: 4.8rem;
-    --h2-font: 3.2rem;
-    --p-font: 1rem;
+  --bg-color: #ffffff;
+  --second-color: #f54300;
+  --main-color: #7dd87d;
+  --text-color: #130849;
+  --other-color: #999fb9;
+  --big-font: 4.8rem;
+  --h2-font: 3.2rem;
+  --p-font: 1rem;
 }
 
 body {
-    color: var(--text-color);
-    background-color: var(--bg-color);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    padding: 25px 18%;
-    z-index: 100;
-    transition: all 0.35s ease-in;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 25px 18%;
+  z-index: 100;
+  transition: all 0.35s ease-in;
+}
+
+.logo img {
+  min-width: 100%;
+  width: 150px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: var(--p-font);
+  color: var(--text-color);
+  padding: 10px 28px;
+  font-weight: 700;
+  transition: all 0.35s ease;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.navbar a.cart {
+  font-size: 30px;
 }
