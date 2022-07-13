@@ -67,3 +67,70 @@ header {
 .navbar a.cart {
   font-size: 30px;
 }
+
+#menu-icon {
+  color: var(--text-color);
+  font-size: 40px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.top-btn a {
+  display: inline-block;
+  background: var(--text-color);
+  color: #fff;
+  padding: 17px 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+section {
+  padding: 80px 18%;
+}
+.home {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 3rem;
+}
+.home-text h1 {
+  margin: 20px 0px 20px;
+  font-size: var(--big-font);
+  line-height: 1.1;
+}
+.home-text h3 {
+  color: var(--second-color);
+  font-size: 35px;
+  font-weight: 600;
+}
+.home-text p {
+  font-size: var(--p-font);
+  color: var(--other-color);
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  padding: 17px 32px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+.btn:hover {
+  box-shadow: 0px 15px 22px rgb(125 216 125 / 44%);
+}
+.home-img img {
+  width: 100%;
+  height: auto;
+}
